@@ -1,33 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="https://www.theodinproject.com/assets/icons/odin-icon-b5b31c073f7417a257003166c98cc23743654715305910c068b93a3bf4d3065d.svg" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://www.theodinproject.com/assets/icons/odin-icon-b5b31c073f7417a257003166c98cc23743654715305910c068b93a3bf4d3065d.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
     <title>Rock Paper Scissors</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="game-board">
-        <div class="game-status">
-            Choose your weapon child!
-        </div>
-        <div class="points">
-            <p class="player">0</p>
-            <span>X</span>
-            <p class="computer">0</p>
-        </div>
+      <div class="game-status">Choose your weapon child!</div>
     </div>
-    <div class="game-options">
-        <button name="Rock" class="btn">ROCK</button>
-        <button name="Paper" class="btn">PAPER</button>
-        <button name="Scissors" class="btn">SCISSORS</button>
+    <div class="center-options">
+      <div class="points">
+        <div>
+          <p class="player">0</p>
+        </div>
+        <div>
+          <p class="computer">0</p>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="player-options">
+          <button name="Rock" id="Rock" class="btn"></button>
+          <button name="Paper" id="Paper" class="btn"></button>
+          <button name="Scissors" id="Scissors" class="btn"></button>
+        </div>
+        <div class="computer-options">
+          <div id="C-Scissors" class="computer-selection"></div>
+          <div id="C-Rock" class="computer-selection"></div>
+          <div id="C-Paper" class="computer-selection"></div>
+        </div>
+      </div>
     </div>
     <div class="pop-up">
-        <h2 class="winner-message">Won or Lost message!</h2>
-        <button id="btn-play-again">Play Again!</button>
+      <h2 class="winner-message"></h2>
+      <button id="btn-play-again">Play Again</button>
     </div>
-</body>
+  </body>
 </html>
