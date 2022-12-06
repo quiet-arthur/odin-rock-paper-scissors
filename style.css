@@ -11,39 +11,45 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     background-color: black;
 }
-/* COUNTING MAIN CONTAINER */
+/* GAME STATUS */
 .game-board {
-    justify-content: center;
-    align-items: center;
     color: white;
 }
 
 .game-status {
-    min-width: 100vw;
-    display: flex;
-    justify-content: center;
+    padding-left: 4rem;
+    max-width: 100vw;
     font-size: 22px;
     font-weight: 700;
 }
+
+/* MAIN CONTAINER */
+.main {
+    max-width: 600px;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .player-options {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 22px;
 }
-
-.center-options {
-    min-width: 100vw;
-    min-height: 50vh;
+.computer-options {
     display: flex;
+    justify-content: space-evenly;
+    gap: 22px;
+    margin-top: 3rem;
     align-items: center;
-    justify-content: center;
-    gap: 4rem;
-}
-
-.right-side {
-    margin-right: 11rem;
+    min-width: 416px;
+    min-height: 100px;
 }
 
 /* PLAYER BUTTONS */
@@ -87,13 +93,11 @@ body {
 
 /* COMPUTER OPTIONS */
 
-.computer-options {
+.computer-side {
     display: flex;
     justify-content: center;
-    gap: 22px;
-    margin-top: 3rem;
-    width: 344px;
-    height: 100px;
+    align-items: center;
+    flex-grow: 2;
 }
 
 .computer-selection {
@@ -128,9 +132,9 @@ body {
 /* POP UP PLAY AGAIN */
 
 .pop-up {
-    border: 2px solid black;
-    width: 400px;
-    height: 200px;
+    border: 2px solid white;
+    min-width: 450px;
+    min-height: 220px;
     text-align: center;
     top: 0;
     left: 50%;
@@ -143,7 +147,7 @@ body {
     opacity: 1;
 }
 .open-pop-up {
-    top: 51%;
+    top: 52%;
     transform: translate(-50%, -50%) scale(1);
     visibility: visible;
 }
@@ -169,20 +173,6 @@ body {
 }
 
 /* COMPUTER X PLAYER  */
-
-.points {
-    display: flex;
-    justify-content: center;
-    color: black;
-    display: flexbox;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 100px;
-    height: 264px;
-    padding: 31px 0;
-}
-
 
 div .player, div .computer  {
     width: 50px;
