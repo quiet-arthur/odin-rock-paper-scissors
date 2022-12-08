@@ -10,7 +10,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     background-color: black;
 }
@@ -184,4 +184,21 @@ div .player, div .computer  {
 }
 .player, .computer {
     font-size: 32px;
+}
+
+/* FOOTER */
+
+footer {
+    color: white;
+    font-size: 18px;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+footer img {
+    width: 20px;
+    background-color: white;
+    border-radius: 50%;
+    margin-left: 8px;
 }
